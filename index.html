@@ -3,22 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
     <title>Document</title>
 </head>
 <body>
     <header class="header">
-        <img class="header__img" src="/img/Group 17.png" alt="">
-        <div class="header__wrap">
-            <div class="header__items-wrap">
-              <div class="header__items marquee">
-                <div class="header__item">Дело помощи утопающим — дело рук самих утопающих! Шахматы двигают вперед не только культуру, но и экономику! Лед тронулся, господа присяжные заседатели!</div>
-                <div class="header__item">Дело помощи утопающим — дело рук самих утопающих! Шахматы двигают вперед не только культуру, но и экономику! Лед тронулся, господа присяжные заседатели!</div>
-              </div>
-            </div>
-          </div>
-        <div class="container header__container">
+        <picture>
+            <source media="(max-width: 1366px)" srcset="img/Group 19.png">
+            <source media="(max-width: 1366px)" srcset="img/Group 19.png">
+            <img class="header__img" src="img/Group 17.png" alt="">
+        </picture>
+        
+        <div class="container">
             <div class="header__group">
                 <a href="#" class="header__logo-link">
                     <svg class="header__logo-svg" width="246" height="36" viewBox="0 0 246 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -29,7 +28,9 @@
                         <path d="M99.3347 15V3.34411H102.332V7.95652H103.164L106.728 3.34411H109.991L105.496 8.78908L110.158 15H106.661L103.164 10.0546H102.332V15H99.3347ZM111.823 15.2165C111.734 15.2165 111.607 15.2109 111.44 15.1998C111.285 15.1998 111.163 15.1887 111.074 15.1665V12.5356C111.107 12.5467 111.19 12.5523 111.324 12.5523C111.546 12.5523 111.734 12.5245 111.89 12.469C112.056 12.4024 112.195 12.2692 112.306 12.0694C112.417 11.8585 112.511 11.5532 112.589 11.1536C112.678 10.7539 112.739 10.2211 112.772 9.55504C112.806 8.87788 112.822 8.02867 112.822 7.00739V3.34411H121.647V15H118.633V5.79185H115.62V7.34042C115.62 8.72802 115.564 9.89361 115.453 10.8372C115.342 11.7697 115.176 12.5245 114.954 13.1018C114.743 13.679 114.482 14.123 114.171 14.4339C113.86 14.7336 113.505 14.9389 113.105 15.05C112.717 15.161 112.289 15.2165 111.823 15.2165ZM126.318 15.2165C126.195 15.2165 126.073 15.2109 125.951 15.1998C125.84 15.1998 125.74 15.1832 125.651 15.1499V12.6688C125.74 12.6799 125.829 12.691 125.918 12.7021C126.007 12.7132 126.112 12.7188 126.234 12.7188C126.556 12.7188 126.806 12.6966 126.984 12.6522C127.161 12.5967 127.3 12.5079 127.4 12.3858C127.5 12.2525 127.583 12.0749 127.65 11.8529L122.971 3.34411H126.018L129.115 9.25531L131.546 3.34411H134.477L130.58 12.1526C130.325 12.7299 130.07 13.2128 129.814 13.6013C129.57 13.9898 129.287 14.3062 128.965 14.5504C128.654 14.7835 128.282 14.95 127.849 15.05C127.428 15.161 126.917 15.2165 126.318 15.2165ZM135.808 15V3.34411H144.383V5.8085H138.805V7.54023H140.72C142.341 7.54023 143.534 7.87326 144.3 8.53931C145.077 9.19426 145.466 10.0768 145.466 11.1869C145.466 12.3858 145.077 13.3238 144.3 14.0009C143.534 14.667 142.341 15 140.72 15H135.808ZM138.805 12.5356H140.387C141.109 12.5356 141.619 12.4191 141.919 12.1859C142.219 11.9417 142.369 11.6087 142.369 11.1869C142.369 10.765 142.219 10.4376 141.919 10.2044C141.619 9.96022 141.109 9.83811 140.387 9.83811H138.805V12.5356ZM105.396 33V28.3543C105.107 28.543 104.724 28.7151 104.247 28.8705C103.781 29.0148 103.226 29.087 102.582 29.087C101.372 29.087 100.456 28.7872 99.8342 28.1878C99.2236 27.5772 98.9184 26.6004 98.9184 25.2572V21.3441H101.916V24.7576C101.916 25.4126 102.054 25.8844 102.332 26.173C102.609 26.4505 102.998 26.5893 103.497 26.5893C103.953 26.5893 104.336 26.5393 104.646 26.4394C104.957 26.3284 105.207 26.2118 105.396 26.0897V21.3441H108.41V33H105.396ZM110.734 33V21.3441H119.226V23.642H113.731V25.9232H118.726V28.0879H113.731V30.7021H119.226V33H110.734ZM124.213 33V23.8085H120.633V21.3441H130.791V23.8085H127.211V33H124.213ZM132.296 33V21.3441H135.293V25.2072H136.708C138.329 25.2072 139.522 25.5569 140.288 26.2562C141.065 26.9556 141.454 27.9047 141.454 29.1036C141.454 30.3025 141.065 31.2516 140.288 31.951C139.522 32.6503 138.329 33 136.708 33H132.296ZM135.293 30.5356H136.375C137.075 30.5356 137.58 30.4024 137.891 30.136C138.201 29.8696 138.357 29.5254 138.357 29.1036C138.357 28.6818 138.201 28.3376 137.891 28.0712C137.58 27.8048 137.075 27.6716 136.375 27.6716H135.293V30.5356ZM142.286 33V21.3441H145.284V33H142.286ZM147.614 33V21.3441H152.359C153.447 21.3441 154.341 21.5051 155.04 21.827C155.739 22.1378 156.256 22.593 156.589 23.1924C156.933 23.7807 157.105 24.4912 157.105 25.3238C157.105 26.1452 156.933 26.8557 156.589 27.4551C156.256 28.0546 155.739 28.5153 155.04 28.8372C154.341 29.148 153.447 29.3034 152.359 29.3034H150.611V33H147.614ZM150.611 26.839H152.026C152.792 26.839 153.33 26.7114 153.641 26.4561C153.952 26.2007 154.108 25.8233 154.108 25.3238C154.108 24.8242 153.952 24.4468 153.641 24.1915C153.33 23.9362 152.792 23.8085 152.026 23.8085H150.611V26.839ZM158.769 33V21.3441H167.261V23.642H161.766V25.9232H166.761V28.0879H161.766V30.7021H167.261V33H158.769ZM168.422 33L172.219 26.9223L168.589 21.3441H171.903L174.184 24.8742L176.498 21.3441H179.745L176.132 26.889L179.912 33H176.565L174.134 28.9204L171.703 33H168.422ZM185.652 33V21.3441H188.649V25.9565H189.482L193.045 21.3441H196.309L191.813 26.7891L196.475 33H192.979L189.482 28.0546H188.649V33H185.652ZM202.979 33.2165C202.224 33.2165 201.503 33.1055 200.814 32.8834C200.126 32.6614 199.521 32.3117 198.999 31.8344C198.478 31.3571 198.067 30.741 197.767 29.9861C197.467 29.2202 197.318 28.3099 197.318 27.2553V26.9223C197.318 25.901 197.467 25.024 197.767 24.2914C198.067 23.5587 198.478 22.9593 198.999 22.4931C199.521 22.0268 200.126 21.6827 200.814 21.4607C201.503 21.2387 202.224 21.1276 202.979 21.1276C203.756 21.1276 204.483 21.2387 205.16 21.4607C205.837 21.6827 206.437 22.0268 206.959 22.4931C207.48 22.9593 207.891 23.5587 208.191 24.2914C208.491 25.024 208.64 25.901 208.64 26.9223V27.2553C208.64 28.3099 208.491 29.2202 208.191 29.9861C207.891 30.741 207.48 31.3571 206.959 31.8344C206.437 32.3117 205.837 32.6614 205.16 32.8834C204.483 33.1055 203.756 33.2165 202.979 33.2165ZM202.962 30.7188C203.418 30.7188 203.839 30.6189 204.228 30.4191C204.616 30.2081 204.927 29.8585 205.16 29.37C205.405 28.8705 205.527 28.1656 205.527 27.2553V26.9223C205.527 26.0564 205.405 25.3848 205.16 24.9075C204.927 24.4301 204.616 24.0971 204.228 23.9084C203.839 23.7197 203.418 23.6253 202.962 23.6253C202.529 23.6253 202.119 23.7197 201.73 23.9084C201.342 24.0971 201.025 24.4301 200.781 24.9075C200.537 25.3848 200.415 26.0564 200.415 26.9223V27.2553C200.415 28.1656 200.537 28.8705 200.781 29.37C201.025 29.8585 201.342 30.2081 201.73 30.4191C202.119 30.6189 202.529 30.7188 202.962 30.7188ZM210.548 33V21.3441H213.545V25.7734H217.874V21.3441H220.871V33H217.874V28.2377H213.545V33H210.548ZM223.199 33V21.3441H231.691V23.642H226.196V25.9232H231.191V28.0879H226.196V30.7021H231.691V33H223.199ZM233.606 33V21.3441H236.603V28.3376L241.182 21.3441H243.929V33H240.932V26.0065L236.353 33H233.606ZM238.768 20.6947C237.99 20.6947 237.352 20.5893 236.853 20.3783C236.364 20.1563 236.003 19.8344 235.77 19.4126C235.548 18.9907 235.437 18.4634 235.437 17.8307H237.868C237.868 18.2969 237.935 18.6133 238.068 18.7798C238.212 18.9352 238.446 19.0129 238.768 19.0129C239.089 19.0129 239.317 18.9352 239.45 18.7798C239.595 18.6133 239.667 18.2969 239.667 17.8307H242.098C242.098 18.4634 241.981 18.9907 241.748 19.4126C241.526 19.8344 241.171 20.1563 240.682 20.3783C240.194 20.5893 239.556 20.6947 238.768 20.6947Z" fill="#595653"/>
                     </svg>
                 </a>
-                <h1 class="header__group-head">Превратите уездный город в столицу земного шара</h1>
+                <h1 align="left" class="header__group-head">Превратите уездный&nbsp;город </h1>
+                <h2 align="center" class="header__group-head">в&nbsp;столицу</h2>
+                <h2 align="right" class="header__group-head">земного&nbsp;шара</h2>
                 <p class="header__group-text">Оплатите взнос на телеграммы для организации Международного васюкинского турнира по шахматам</p>
                 <div class="header__group-buttons">
                     <button href="" class="header__group-buttons-support">Поддержать шахматную мысль</button>
@@ -40,6 +41,14 @@
     </header>
     <main class="main">
         <section class="table">
+            <div class="table__wrap">
+                <div class="table__items-wrap">
+                  <div class="table__items marquee">
+                    <div class="table__item">Дело помощи утопающим — дело рук самих утопающих! Шахматы двигают вперед не только культуру, но и экономику! Лед тронулся, господа присяжные заседатели!</div>
+                    <div class="table__item">Дело помощи утопающим — дело рук самих утопающих! Шахматы двигают вперед не только культуру, но и экономику! Лед тронулся, господа присяжные заседатели!</div>
+                  </div>
+                </div>
+            </div>
             <div class="container">
                 <div class="table__group">
                     <h2 class="table__group-head">Чтобы поддержать Международный васюкинский турнир посетите лекцию на тему: <span class="colortext"> «Плодотворная дебютная идея»</span></h2>
@@ -48,27 +57,27 @@
                 <div class="table__seans-group">
                     <img src="/img/chance.png" alt="" class="seans__group-img">
                     <div class="table__seanse-plan">
-                        <h2 class="table__seanse-plan-head">И Сеанс одновременной игры в шахматы на 160 досках гроссмейстера О. Бендера</h2>
+                        <h2 class="table__seanse-plan-head">И Сеанс <span class="colortext">одновременной игры в шахматы на 160 досках</span> гроссмейстера О. Бендера</h2>
                         <table>
                             <tr>
-                                <td>Место проведения:</td>
-                                <td><strong>Клуб «Картонажник»</strong></td>
+                                <td class="table__grey">Место проведения:</td>
+                                <td class="table__strong"><strong>Клуб «Картонажник»</strong></td>
                             </tr>
                             <tr>
-                                <td>Дата и время мероприятия:</td>
-                                <td><strong>22 июня 1927 г. в 18:00</strong></td>
+                                <td class="table__grey">Дата и время мероприятия:</td>
+                                <td class="table__strong"><strong>22 июня 1927 г. в 18:00</strong></td>
                             </tr>
                             <tr>
-                                <td>Стоимость входных билетов:</td>
-                                <td><strong>20 коп.</strong></td>
+                                <td class="table__grey">Стоимость входных билетов:</td>
+                                <td class="table__strong"><strong>20 коп.</strong></td>
                             </tr>
                             <tr>
-                                <td>Плата за игру:</td>
-                                <td><strong>50 коп.</strong></td>
+                                <td class="table__grey">Плата за игру:</td>
+                                <td class="table__strong"><strong>50 коп.</strong></td>
                             </tr>
                             <tr>
-                                <td>Взнос на телеграммы:</td>
-                                <td><span>100 руб.</span><strong>21 руб. 16 коп.</strong></td>
+                                <td class="table__grey">Взнос на телеграммы:</td>
+                                <td class="table__strong"><span style="color: #ff2c0a; text-decoration: line-through; margin-right: 6px;"><span style="color: #333333; ">100 руб.</span> </span><strong> 21 руб. 16 коп.</strong></td>
                             </tr>
                         </table>
                         <a href="#" class="table__link">По всем вопросам обращаться в администрацию к К. Михельсону</a>
@@ -83,63 +92,89 @@
                     <a href="#" class="step__heading-link">Будущие источники обогащения васюкинцев</a>
                 </div>
                 <div class="step__group">
-                    <ol class="step__group-list">
-                        <li class="step__group-item">Строительство железнодорожной магистрали Москва-Васюки</li>
-                        <li class="step__group-item">Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов</li>
-                        <li class="step__group-item">Поднятие сельского хозяйства в радиусе на тысячу километров: производство овощей, фруктов, икры, шоколадных конфет</li>
-                        <li class="step__group-item">Строительство дворца для турнира</li>
-                        <li class="step__group-item">Размещение гаражей для гостевого автотранспорта</li>
-                        <li class="step__group-item">Постройка сверхмощной радиостанции для передачи всему миру сенсационных результатов</li>
-                        <li class="step__group-item">Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых самолётов и дирижаблей во все концы света, включая Лос-Анжелос и Мельбурн</li>
-                    </ol>
+                    <ul class="step__group-list">
+                        <li class="step__group-item"><p class="step__group-count">1</p> <p class="step__group-item-text">Строительство железнодорожной магистрали&nbsp;Москва-Васюки</p></li>
+                        <li class="step__group-item"><p class="step__group-count">2</p> <p class="step__group-item-text">Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов</p></li>
+                        <li class="step__group-item"><p class="step__group-count">3</p> <p class="step__group-item-text">Поднятие сельского хозяйства&nbsp;в радиусе на тысячу&nbsp;километров: производство овощей, фруктов,&nbsp;икры, шоколадных конфет</p></li>
+                        <li class="step__group-item"><p class="step__group-count">4</p> <p class="step__group-item-text">Строительство дворца для турнира</p></li>
+                        <li class="step__group-item"><p class="step__group-count">5</p> <p class="step__group-item-text">Размещение гаражей для гостевого автотранспорта</p></li>
+                        <li class="step__group-item"><p class="step__group-count">6</p> <p class="step__group-item-text">Постройка сверхмощной радиостанции для передачи всему миру сенсационных результатов</p></li>
+                        <li class="step__group-item"><p class="step__group-count">7</p> <p class="step__group-item-text">Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых самолётов и дирижаблей во все концы света, включая Лос-Анжелос и Мельбурн</p></li>
+                    </ul>
+                    <span class="step__group-img"></span>
                 </div>
             </div>
         </section>
         <section class="turnir">
             <div class="container">
-                <h2 class="turnir__heading">Участники турнира</h2>
+               
                 <div class="turnir__container">
-                    <div class="slider">
-                      <div class="slide">
-                        <img src="img/Frame 48095641.png" alt="1">
-                        <h4 class="turnir__slider-head">Хозе-Рауль Капабланка</h4>
-                        <p class="turnir__slider-job">Чемпион мира по шахматам</p>
-                        <a href="#" class="turnir__slider-more">Подробнее</a>
-                      </div>
-                      <div class="slide">
-                        <img src="img/Frame 48095641.png" alt="2">
-                        <h4 class="turnir__slider-head">Эммануил Ласкер</h4>
-                        <p class="turnir__slider-job">Чемпион мира по шахматам</p>
-                        <a href="#" class="turnir__slider-more">Подробнее</a>
-                      </div>
-                      <div class="slide">
-                        <img src="img/Frame 48095641.png" alt="3">
-                        <h4 class="turnir__slider-head">Александр Алехин</h4>
-                        <p class="turnir__slider-job">Чемпион мира по шахматам</p>
-                        <a href="#" class="turnir__slider-more">Подробнее</a>
-                      </div>
-                      <div class="slide">
-                        <img src="img/Frame 48095641.png" alt="1">
-                        <h4 class="turnir__slider-head">Арон Нимцович</h4>
-                        <p class="turnir__slider-job"></p>
-                        <a href="#" class="turnir__slider-more">Подробнее</a>
-                      </div>
-                      <div class="slide">
-                        <img src="img/Frame 48095641.png" alt="2">
-                        <h4 class="turnir__slider-head">Рихард Рети</h4>
-                        <p class="turnir__slider-job"></p>
-                        <a href="#" class="turnir__slider-more">Подробнее</a>
-                      </div>
-                      <div class="slide">
-                        <img src="img/Frame 48095641.png" alt="3">
-                        <h4 class="turnir__slider-head">Остап Бендер</h4>
-                        <p class="turnir__slider-job"></p>
-                        <a href="#" class="turnir__slider-more">Подробнее</a>
-                      </div>
+                    <h2 class="turnir__heading">Участники турнира</h2>
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slide">
+                                    <img class="turnir__img" src="img/Frame 48095641.png" alt="1">
+                                    <h4 class="turnir__slider-head">Хозе-Рауль Капабланка</h4>
+                                    <p class="turnir__slider-job">Чемпион мира по шахматам</p>
+                                    <a href="#" class="turnir__slider-more">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide">
+                                    <img class="turnir__img" src="img/Frame 48095641.png" alt="2">
+                                    <h4 class="turnir__slider-head">Эммануил Ласкер</h4>
+                                    <p class="turnir__slider-job">Чемпион мира по шахматам</p>
+                                    <a href="#" class="turnir__slider-more">Подробнее</a>
+                                  </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide">
+                                    <img class="turnir__img" src="img/Frame 48095641.png" alt="3">
+                                    <h4 class="turnir__slider-head">Александр Алехин</h4>
+                                    <p class="turnir__slider-job">Чемпион мира по шахматам</p>
+                                    <a href="#" class="turnir__slider-more">Подробнее</a>
+                                  </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide">
+                                    <img class="turnir__img" src="img/Frame 48095641.png" alt="1">
+                                    <h4 class="turnir__slider-head">Арон Нимцович</h4>
+                                    <p class="turnir__slider-job">Чемпион мира по шахматам</p>
+                                    <a href="#" class="turnir__slider-more">Подробнее</a>
+                                  </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide">
+                                    <img class="turnir__img" src="img/Frame 48095641.png" alt="2">
+                                    <h4 class="turnir__slider-head">Рихард Рети</h4>
+                                    <p class="turnir__slider-job">Чемпион мира по шахматам</p>
+                                    <a href="#" class="turnir__slider-more">Подробнее</a>
+                                  </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide">
+                                    <img class="turnir__img" src="img/Frame 48095641.png" alt="3">
+                                    <h4 class="turnir__slider-head">Остап Бендер</h4>
+                                    <p class="turnir__slider-job">Гроссмейстер</p>
+                                    <a href="#" class="turnir__slider-more">Подробнее</a>
+                                  </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="btn prev-btn">&#10094;</div>
-                    <div class="btn next-btn">&#10095;</div>
-                    <div class="counter">1 / 6</div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev">
+                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="22" cy="22" r="22" transform="rotate(-180 22 22)" fill="#313131"/>
+                            <path d="M24.5382 30.4614L16.0767 21.9999L24.5382 13.5384" stroke="white" stroke-width="2" stroke-linecap="square"/>
+                        </svg>
+                    </div>
+                    <div class="swiper-button-next">
+                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="22" cy="22" r="22" fill="#313131"/>
+                            <path d="M19.4618 13.5385L27.9233 22L19.4618 30.4615" stroke="white" stroke-width="2" stroke-linecap="square"/>
+                        </svg>
+                    </div>
                   </div>
             </div>
         </section>
@@ -159,6 +194,7 @@
             </p>
         </div>
     </footer>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script defer src="js/slider.js"></script>
 </body>
 </html>
