@@ -140,16 +140,23 @@ li{
 }
 .header__group-buttons-support {
   max-width: 263px;
+  max-height: 73px;
+  text-align: center;
   font-size: 16px;
   padding: 20px 49px;
   border: 1px solid black;
+  background-color: #1F1F1F;
+  color: #fff;
   border-radius: 66px;
 }
 .header__group-buttons-more {
   max-width: 260px;
+  max-height: 73px;
+  text-align: center;
   font-size: 16px;
   padding: 20px 49px;
   border: 1px solid black;
+  color: #1F1F1F;
   border-radius: 66px;
 }
 /* пример */
@@ -159,7 +166,7 @@ li{
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 24px 0 24px;
+  padding: 80px 24px 0 24px;
 
 }
 .table__group-head {
@@ -219,7 +226,6 @@ li{
 .table__wrap {
   max-width: 100%;
   margin: auto;
-  padding: 20px;
 }
 .table__items-wrap {
   position: relative;
@@ -227,6 +233,7 @@ li{
   overflow: hidden;
   user-select: none;
   gap: 20px;
+  background-color: #F54932;
 }
 .table__items-wrap:before,
 .table__items-wrap:after {
@@ -238,7 +245,7 @@ li{
   z-index: 1;
   pointer-events: none;
 }
-.table__items-wrap:before {
+/* .table__items-wrap:before {
   left: 0;
   background: linear-gradient(
     90deg,
@@ -253,7 +260,7 @@ li{
     rgba(255, 255, 255, 0) 0%,
     rgba(255, 255, 255, 1) 100%
   );
-}
+} */
 .table__items {
   flex-shrink: 0;
   display: flex;
@@ -263,16 +270,18 @@ li{
   min-width: 100%;
 }
 .table__item {
-  background: #ccc;
+  background: #F54932;
   flex: 0 0 auto;
   width: 100%;
-  height: 57px;
+  height: 60px;
   counter-increment: item;
+  padding: 18px 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 25px;
+  font-size: 24px;
   font-weight: bold;
+  text-transform: uppercase;
   color: #fff;
   transition: all 0.1s ease-in-out;
 }
@@ -284,7 +293,11 @@ li{
 .table__item:before {
   content: counter(item);
 }
- 
+picture {
+  display: block;
+  width: 100%;
+  height: 700px;
+}
 .marquee {
   animation: scroll 10s linear infinite;
 }
@@ -354,15 +367,18 @@ li{
 }
 .step__group-item:nth-child(6) {
   grid-area: card6;
+  min-height: 137px;
 }
 .step__group-item:nth-child(7) {
   grid-area: card7;
-  min-height: 137px;
+  min-height: 100%;
 }
+
 .step__group-item {
   display: flex;
   flex-direction: row;
-  padding: 20px 20px 20px 20px;
+  min-height: 100%;
+  padding: 22px 20px 20px 22px;
   background-color: #18aaaa;
 }
 .step__group-item-text {
@@ -371,13 +387,14 @@ li{
 }
 .step__group-img {
   position: absolute;
-  width: 350px;
+  width: 29%;
   top: 60%;
-  right: 29px;
+  right: 4px;
   height: 300px;
   background-image: url('../img/Maskgroup3\).png');
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
 }
 
 .step__group-count {
@@ -389,16 +406,98 @@ li{
   height: 33px;
   border-radius: 50%;
 }
-
+.step__group-item:nth-child(3) .step__group-count {
+  width: 23%;
+}
+.step__group-item:nth-child(4) .step__group-count {
+  width: 10%;
+}
+.step__group-item:nth-child(6) .step__group-count {
+  width: 21%;
+}
+.step__group-item:nth-child(7) .step__group-count {
+  width: 5%;
+}
 .turnir {
   padding-top: 184px;
-  padding-bottom: 141px;
+  padding-bottom: 142px;
 }
 .turnir__heading {
   position: relative;
   font-size: 57px;
   text-transform: uppercase;
   padding: 0 30px;
+}
+
+.footer__wrap {
+  max-width: 100%;
+  margin: auto;
+  padding: 0px;
+}
+.footer__items-wrap {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: 20px;
+  background-color: #F54932;
+}
+.footer__items-wrap:before,
+.footer__items-wrap:after {
+  content: "";
+  height: 100%;
+  top: 0;
+  width: 10%;
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+}
+.footer__items {
+  flex-shrink: 0;
+  display: flex;
+  gap: 0px;
+  counter-reset: item;
+  justify-content: space-around;
+  min-width: 100%;
+}
+.footer__item {
+  background: #F54932;
+  flex: 0 0 auto;
+  width: 100%;
+  height: 60px;
+  counter-increment: item;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  transition: all 0.1s ease-in-out;
+}
+.footer__item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+ 
+.footer__item:before {
+  content: counter(item);
+}
+ 
+.marquee {
+  animation: scroll 10s linear infinite;
+}
+.reverce {
+  animation-direction: reverse;
+}
+.footer__items-wrap:hover .marquee {
+  animation-play-state: paused;
+}
+.footer {
+  background-color: #E9DED4;
+}
+.footer__text {
+  padding: 46px 31px 65px 31px;
 }
 
 .perfscan {

@@ -3,3 +3,42 @@
         max-width: 1272px;
     } 
 }
+
+@media(max-width:1130px){
+    .container{
+        max-width: 1024px;
+    } 
+    table {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 29px;
+        width: 97%;
+        border-collapse: collapse;
+        border: 2px solid white;
+    }
+    tr{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .table__grey {
+        max-width: 100%;
+        border: 2px solid black;
+    }
+    .table__strong {
+        max-width: 100%;
+    }
+    .table__seans-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 37px;
+        margin-bottom: 100px;
+    }
+    .seans__group-img {
+        width: 100%;
+    }
+    .table__seanse-plan {
+        width: 100%;
+    }
+}

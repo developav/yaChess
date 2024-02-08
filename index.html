@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
@@ -33,8 +34,8 @@
                 <h2 align="right" class="header__group-head">земного&nbsp;шара</h2>
                 <p class="header__group-text">Оплатите взнос на телеграммы для организации Международного васюкинского турнира по шахматам</p>
                 <div class="header__group-buttons">
-                    <button href="" class="header__group-buttons-support">Поддержать шахматную мысль</button>
-                    <button href="" class="header__group-buttons-more">Подробнее о турнире</button>
+                    <a href="" class="header__group-buttons-support">Поддержать шахматную мысль</a>
+                    <a href="" class="header__group-buttons-more">Подробнее о турнире</a>
                 </div>
             </div>
         </div>
@@ -45,13 +46,13 @@
                 <div class="table__items-wrap">
                   <div class="table__items marquee">
                     <div class="table__item">Дело помощи утопающим — дело рук самих утопающих! Шахматы двигают вперед не только культуру, но и экономику! Лед тронулся, господа присяжные заседатели!</div>
-                    <div class="table__item">Дело помощи утопающим — дело рук самих утопающих! Шахматы двигают вперед не только культуру, но и экономику! Лед тронулся, господа присяжные заседатели!</div>
                   </div>
                 </div>
             </div>
             <div class="container">
                 <div class="table__group">
                     <h2 class="table__group-head">Чтобы поддержать Международный васюкинский турнир посетите лекцию на тему: <span class="colortext"> «Плодотворная дебютная идея»</span></h2>
+                    <h2 class="table__group-head"></h2>
                     <img src="/img/turnir.png" alt="" class="table__group-img">
                 </div>
                 <div class="table__seans-group">
@@ -91,17 +92,19 @@
                     <h2 class="step__heading">Этапы преображения Васюков</h2>
                     <a href="#" class="step__heading-link">Будущие источники обогащения васюкинцев</a>
                 </div>
-                <div class="step__group">
-                    <ul class="step__group-list">
-                        <li class="step__group-item"><p class="step__group-count">1</p> <p class="step__group-item-text">Строительство железнодорожной магистрали&nbsp;Москва-Васюки</p></li>
-                        <li class="step__group-item"><p class="step__group-count">2</p> <p class="step__group-item-text">Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов</p></li>
-                        <li class="step__group-item"><p class="step__group-count">3</p> <p class="step__group-item-text">Поднятие сельского хозяйства&nbsp;в радиусе на тысячу&nbsp;километров: производство овощей, фруктов,&nbsp;икры, шоколадных конфет</p></li>
-                        <li class="step__group-item"><p class="step__group-count">4</p> <p class="step__group-item-text">Строительство дворца для турнира</p></li>
-                        <li class="step__group-item"><p class="step__group-count">5</p> <p class="step__group-item-text">Размещение гаражей для гостевого автотранспорта</p></li>
-                        <li class="step__group-item"><p class="step__group-count">6</p> <p class="step__group-item-text">Постройка сверхмощной радиостанции для передачи всему миру сенсационных результатов</p></li>
-                        <li class="step__group-item"><p class="step__group-count">7</p> <p class="step__group-item-text">Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых самолётов и дирижаблей во все концы света, включая Лос-Анжелос и Мельбурн</p></li>
-                    </ul>
-                    <span class="step__group-img"></span>
+                <div class="step__all-group" role="group" aria-label="Splide Basic HTML Example">
+                    <div class="step__group">
+                        <ul class="step__group-list">
+                            <li class="step__group-item"><p class="step__group-count">1</p> <p class="step__group-item-text">Строительство железнодорожной магистрали&nbsp;Москва-Васюки</p></li>
+                            <li class="step__group-item"><p class="step__group-count">2</p> <p class="step__group-item-text">Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов</p></li>
+                            <li class="step__group-item"><p class="step__group-count">3</p> <p class="step__group-item-text">Поднятие сельского хозяйства&nbsp;в радиусе на тысячу&nbsp;километров: производство овощей, фруктов,&nbsp;икры, шоколадных конфет</p></li>
+                            <li class="step__group-item"><p class="step__group-count">4</p> <p class="step__group-item-text">Строительство дворца для турнира</p></li>
+                            <li class="step__group-item"><p class="step__group-count">5</p> <p class="step__group-item-text">Размещение гаражей для гостевого автотранспорта</p></li>
+                            <li class="step__group-item"><p class="step__group-count">6</p> <p class="step__group-item-text">Постройка сверхмощной радиостанции для передачи всему миру сенсационных результатов</p></li>
+                            <li class="step__group-item"><p class="step__group-count">7</p> <p class="step__group-item-text">Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых самолётов и дирижаблей во все концы света, включая Лос-Анжелос и Мельбурн</p></li>
+                        </ul>
+                        <span class="step__group-img"></span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -180,11 +183,10 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="header__wrap">
-            <div class="header__items-wrap">
-              <div class="header__items marquee">
-                <div class="header__item">Дело помощи утопающим — дело рук самих утопающих! Шахматы двигают вперед не только культуру, но и экономику! Лед тронулся, господа присяжные заседатели!</div>
-                <div class="header__item">Дело помощи утопающим — дело рук самих утопающих! Шахматы двигают вперед не только культуру, но и экономику! Лед тронулся, господа присяжные заседатели!</div>
+        <div class="footer__wrap">
+            <div class="footer__items-wrap">
+              <div class="footer__items marquee">
+                <div class="footer__item">Дело помощи утопающим — дело рук самих утопающих! Шахматы двигают вперед не только культуру, но и экономику! Лед тронулся, господа присяжные заседатели!</div>
               </div>
             </div>
         </div>
@@ -194,7 +196,9 @@
             </p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script defer src="js/slider.js"></script>
+    <script defer src="js/main.js"></script>
 </body>
 </html>
